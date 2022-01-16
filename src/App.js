@@ -13,7 +13,7 @@ function App() {
       <Header />
       <NoteAdd 
         onEnter={() => {
-          /\w/.test(noteText) && setChildren(children.concat(noteText))
+          /\./.test(noteText) && setChildren(children.concat(noteText))
         }} 
         onChange={(e) => {
           setNoteText(e.target.value)
