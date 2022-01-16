@@ -1,0 +1,11 @@
+.Note {
+    margin-top: 10px;
+    width: 80%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    background: #eee;
+    box-shadow: 2px 2px 4px #000;
+    padding: 10px;
+    border-radius: 0.5rem;
+}

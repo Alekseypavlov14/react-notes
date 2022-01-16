@@ -1,0 +1,23 @@
+.NoteAdd {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+    width: 100%;
+    height: 50px;
+    background: #eee;
+    box-shadow: inset 0px 0px 4px #ddd;
+}
+
+.Field {
+    display: block;
+    width: 250px;
+    height: 30px;
+    border-radius: 3px;
+    border: 1px solid #999;
+}
+
+.Field:focus{
+    outline: 1px solid #777;
+}
