@@ -5,7 +5,14 @@ import Note from './../Note/Note'
 const Notes = (props) => {
     return (
         <div className={s.Notes}>
-            {props.notes.map((note, index) => <Note text={note} key={index.toString()} />)}
+            {props.notes.map((note, index) => !note.done && (
+                <Note 
+                    text={note.text} 
+                    key={index.toString()} 
+                    updateNotes={props.updateNotes}
+                    note={note}
+                />
+            ))}
         </div>
     )
 }

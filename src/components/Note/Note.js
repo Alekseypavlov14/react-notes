@@ -6,7 +6,7 @@ import s from './Note.module.css'
 const Note = (props) => {
     return (
         <div className={s.Note}>
-            <NoteButton />
+            <NoteButton updateNotes={props.updateNotes} note={props.note} />
             <NoteText text={props.text}/>
         </div>
     )

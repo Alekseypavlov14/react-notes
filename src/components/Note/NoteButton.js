@@ -1,19 +1,15 @@
-import React, { useState } from "react"
+import React from "react"
 import s from './NoteButton.module.css'
 
-const NoteButton = () => {
-    const [status, setStatus] = useState(false)
-
+const NoteButton = (props) => {
     return (
         <div>
             <label 
                 htmlFor='#button' 
-                className={status ? s.VisualButtonActive : s.VisualButtonPassive}
+                className={s.VisualButtonPassive}
                 onClick={ (e) => {
-                    setStatus(!status)
-                    if (!status) {
-                        e.target.parentElement.parentElement.remove()
-                    }
+                    props.note.done = true
+                    props.updateNotes()
                 } }
             />
             <a id='button'></a>
