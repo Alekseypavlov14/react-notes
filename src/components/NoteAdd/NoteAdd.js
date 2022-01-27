@@ -9,6 +9,7 @@ const NoteAdd = (props) => {
                     if (e.key === 'Enter') {
                         props.onEnter()
                         e.target.value = ''
+                        props.updateInputValue()
                     }
                 }}
                 onChange={props.onChange} 

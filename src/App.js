@@ -22,6 +22,7 @@ function App() {
       <Header />
 
       <NoteAdd 
+        updateInputValue={() => {setNoteText('')}}
         onEnter={() => {
           noteText.length !== 0 && setNotes(notes.concat({text: noteText, done: false}))
         }} 
